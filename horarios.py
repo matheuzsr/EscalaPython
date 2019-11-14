@@ -26,20 +26,20 @@ def verEscala(num):
     num = num % 8
 
     if num == 4 or num == 5:
-        status = 'M'
-        print('Horario manha')
+        status = 'F'
+        print('FOLGA')
 
     elif num == 6 or num == 7:
         status = 'M'
-        print('Horario tarde')
+        print('Horario manhã')
 
     elif num == 0 or num == 1:
-        status = 'M'
-        print('Horario noite')
+        status = 'T'
+        print('Horario tarde')
 
     elif num == 2 or num == 3:
-        status = 'M'
-        print('FOLGA')
+        status = 'N'
+        print('Horario noite')
     return status
 
 
@@ -47,13 +47,13 @@ def verEscalaMensal(num):
     num = num % 8
 
     if num == 4 or num == 5:
-        status = 'M'
-    elif num == 6 or num == 7:
-        status = 'T'
-    elif num == 0 or num == 1:
-        status = 'N'
-    elif num == 2 or num == 3:
         status = 'F'
+    elif num == 6 or num == 7:
+        status = 'M'
+    elif num == 0 or num == 1:
+        status = 'T'
+    elif num == 2 or num == 3:
+        status = 'N'
     return status
 
 
